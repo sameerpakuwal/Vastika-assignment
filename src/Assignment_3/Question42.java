@@ -9,9 +9,11 @@ public class Question42 {
 		int counter =0;
 		String [] words = Lines.split(" ");
 		words = Lines.split(" ");
-		for (int i = 0; i < words.length-1; i++) {
+		
+        
+		for (int i = 0; i < words.length; i++) {
 			counter =1;
-			for (int j = 0; j < i; j++) {
+			for (int j = i+1; j < words.length ; j++) {
 				if((words[j]).equalsIgnoreCase(words[i])) {
 					
 					counter++;
